@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Snake Game</title>
+</head>
+<body>
+    <main class="game-shell">
+        <h1>Snake Game</h1>
+        <p class="instructions">Use as setas ou WASD • Espaço: pausar/jogar • R: reiniciar</p>
+
+        <div class="hud" aria-label="Informações do jogo">
+            <div class="hud-item">Pontos: <strong id="score">0</strong></div>
+            <div class="hud-item hearts" aria-label="Vidas">
+                <span id="hearts" aria-live="polite">❤️❤️❤️</span>
+            </div>
+            <div class="hud-item">Recorde: <strong id="snake-best">0</strong></div>
+            <div class="hud-item">Estado: <strong id="state">PRONTO</strong></div>
+        </div>
+
+        <canvas id="game" width="480" height="480" aria-label="Área do jogo da cobra"></canvas>
+
+        <p class="hint">🍎 Maçã normal = 1 ponto • 🟡 Maçã dourada = 10 pontos • Fuja do quadrado preto!</p>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+

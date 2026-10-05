@@ -1,0 +1,74 @@
+:root {
+    --bg: #0b5d2a;
+    --panel: #073d1c;
+    --panel-border: #4ade80;
+    --text: #f0fdf4;
+}
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #063b1b;
+    color: var(--text);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.game-shell {
+    width: min(94vw, 560px);
+    padding: 20px 12px 28px;
+}
+
+h1 {
+    margin: 0 0 6px;
+    font-size: clamp(32px, 7vw, 48px);
+    letter-spacing: 1px;
+}
+
+.instructions, .hint {
+    margin: 7px 0;
+    color: #dcfce7;
+    font-size: 14px;
+}
+
+.hud {
+    margin: 14px auto 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+
+.hud-item {
+    padding: 7px 11px;
+    border: 1px solid rgba(134, 239, 172, .45);
+    border-radius: 9px;
+    background: rgba(3, 46, 21, .82);
+    font-size: 14px;
+}
+
+.hearts {
+    font-size: 18px;
+    letter-spacing: 2px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+canvas {
+    display: block;
+    width: min(94vw, 480px);
+    height: min(94vw, 480px);
+    margin: 12px auto 0;
+    background: #16833c;
+    border: 4px solid #86efac;
+    border-radius: 8px;
+    box-shadow: 0 12px 35px rgba(0,0,0,.28);
+    image-rendering: pixelated;
+}
+
+.hint { margin-top: 12px; }
